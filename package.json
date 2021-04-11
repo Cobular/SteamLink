@@ -1,0 +1,16 @@
+{
+  "name": "SteamLink",
+  "version": "0.0.1",
+  "description": "Links from the steam webpage open in your browser to the steam client. No more \"You must be signed in\"!",
+  "main": "index.js",
+  "author": "Cobular",
+  "license": "MIT",
+  "dependencies": {
+    "web-ext": "^6.0.0"
+  },
+  "scripts": {
+    "start": "web-ext run",
+    "start:chromium": "web-ext run -t chromium",
+    "lint": "web-ext lint"
+  }
+}
