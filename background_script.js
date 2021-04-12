@@ -19,6 +19,7 @@ browser.pageAction.onClicked.addListener((tabs) => {
 })
 
 chrome.tabs.onActivated.addListener(function (tabs) {
+  console.log(tabs)
   chrome.pageAction.show(tabs.tabId);
 });
 
@@ -31,25 +32,16 @@ chrome.runtime.onInstalled.addListener(function () {
           // That fires when a page's URL contains a 'g' ...
           conditions: [
             new chrome.declarativeContent.PageStateMatcher({
-              pageUrl: {hostEquals: "store.steampowered.com/"}
+              pageUrl: {hostEquals: "store.steampowered.com"}
+            }),
+            new chrome.declarativeContent.PageStateMatcher({
+              pageUrl: {hostEquals: "steamcommunity.com"}
             })
           ],
           // And shows the extension's page action.
           actions: [new chrome.declarativeContent.ShowPageAction()]
         }
-      ],
-      // [
-      //   {
-      //     // That fires when a page's URL contains a 'g' ...
-      //     conditions: [
-      //       new chrome.declarativeContent.PageStateMatcher({
-      //         pageUrl: {hostContains: "steamcommunity"}
-      //       })
-      //     ],
-      //     // And shows the extension's page action.
-      //     actions: [new chrome.declarativeContent.ShowPageAction()]
-      //   }
-      // ]
+      ]
     );
   });
 });

@@ -25,13 +25,11 @@
     "default_title": "SteamLink",
     "show_matches": [
       "https://store.steampowered.com/*",
-      "https://store.steampowered.com",
       "https://steamcommunity.com/*"
     ]
   },
   "permissions": [
     "https://store.steampowered.com/*",
-    "https://store.steampowered.com",
     "https://steamcommunity.com/*",
     "declarativeContent",
     "tabs"
