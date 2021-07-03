@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "SteamLink",
   "description": "Links from the steam webpage open in your browser to the steam client. No more \"You must be signed in\"!",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "icons": {
     "64": "icons/steam-64_x_64.png",
     "48": "icons/steam-48_x_48.png",
@@ -12,6 +12,7 @@
   "background": {
     "scripts": [
       "libs/browser-polyfill.min.js",
+      "umami.min.js",
       "background_script.js"
     ]
   },
