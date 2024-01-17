@@ -6,7 +6,7 @@
   "author": "Cobular",
   "license": "MIT",
   "dependencies": {
-    "web-ext": "^6.0.0"
+    "web-ext": "^7.0.0"
   },
   "scripts": {
     "start": "web-ext run",
