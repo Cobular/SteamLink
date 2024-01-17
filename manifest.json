@@ -3,7 +3,7 @@
   "manifest_version": 3,
   "name": "SteamLink - Open Links In Steam",
   "description": "Links from the steam webpage open in your browser to the steam client. No more \"You must be signed in\"!",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "icons": {
     "64": "icons/steam-64_x_64.png",
     "48": "icons/steam-48_x_48.png",
